@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Gallery</title>
+<link rel="stylesheet" type="text/css" href="Stylesheet.css">
+</head>
+<body>
+	
+	<header>
+  		<p>Gallery</p>
+	</header>
+	
+<div class="topnav">
+		<a href="Index.html">Home</a>
+		<a href="United States.html">United States</a>
+		<a href="South Vietnam.html">South Vietnam</a>
+		<a href="North Vietnam.html">North Vietnam</a>
+		<a href="Vietcong.html">Vietcong</a>
+		<a href="Weapons.html">Vehicles, Weapons and Equipment</a>
+		<a href="Protests.html">Protests</a>
+		<a href="Outcome.html">Outcome</a>
+		<a href="Current.html">Effect of the War</a>
+		<a href="Slide.html">Gallery</a>
+	</div>
+	
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="Images/Trench.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="Images/Copter2.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Images/Copter.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+	
+	<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Images/Gunfight1.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+	
+	<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Images/VCtrap.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+	
+	<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Images/VC supply.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Images/VC1.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+	
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Images/snap.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Images/Fall.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+	
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Images/Run.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+	
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Images/Tet.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+	<span class="dot" onclick="currentSlide(3)"></span>
+	<span class="dot" onclick="currentSlide(3)"></span>
+	<span class="dot" onclick="currentSlide(3)"></span>
+	<span class="dot" onclick="currentSlide(3)"></span>
+	<span class="dot" onclick="currentSlide(3)"></span>
+	<span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 
